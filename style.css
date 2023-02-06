@@ -1,0 +1,43 @@
+:root {
+    --main-cor: 0, 255, 213;
+    --secondary-cor: 22, 83, 73;
+    --tertiary-cor: 56, 0, 28;
+    --quaternary-cor: 02, 51, 153;
+    color: rgb(0, 255, 213);
+    color: rgb(22, 83, 73);
+    color: rgb(56, 0, 28);
+    color: rgb(02, 51, 153);
+}
+
+body {
+    background-color: rgb(var(--tertiary-cor));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: .5rem 1rem;
+}
+
+.logo {
+    background-image: linear-gradient(to bottom, rgb(var(--main-cor)), rgb(var(--quaternary-cor)));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.textDec {
+    text-decoration: none;
+    color: rgb(var(--main-cor));
+    text-shadow: 1px 1px rgb(var(--secondary-cor));
+}
